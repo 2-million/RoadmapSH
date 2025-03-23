@@ -1,0 +1,27 @@
+.card-body {
+  padding: 16px;
+  margin: 8px;
+  border-color: black;
+  border: solid 3px;
+  border-radius: 10px;
+
+  min-width: 100px;
+  max-width: 300px;
+}
+
+.card-options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+p {
+  padding: 0 4px 0 4px;
+}
+
+.row {
+  display: flex;
+}
+
+.info {
+  padding: 10px 0 10px 0;
+}

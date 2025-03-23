@@ -1,0 +1,26 @@
+header {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 36px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.elements {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-board {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 36px;
+}
+
+hr {
+  margin-bottom: 16px;
+}
