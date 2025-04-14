@@ -1,18 +1,28 @@
-<div class="card-body">
-  <div class="info">
-    <p>Сходить в магазинчик и купить коку-колу</p>
-    <p-checkbox type="checkbox" />
-  </div>
-  <div class="row">
-    <h3>#</h3>
-    <p>Магаз</p>
-  </div>
+<div class="row">
+  <input
+    #newItem
+    placeholder="add an item"
+    (keyup.enter)="addItem(newItem.value); newItem.value = ''"
+    class="lg-text-input"
+    id="addItemInput"
+    type="text"
+    [maxLength]="150"
+  />
+  <button class="btn-primary" (click)="addItem(newItem.value)">Add</button>
+</div>
+<hr />
 
-  <div class="card-options">
-    <p-button (onClick)="showAlert()">[update]</p-button>
+<div class="card-board">
+  <div class="card-body" *ngFor="let item of items">
+    <div class="info">
+      <p>/ {{ item.description }}</p>
+      <p-checkbox [(ngModel)]="item.done"></p-checkbox>
+    </div>
 
-    <p-button (onClick)="showAlert()">[done]</p-button>
-
-    <p-button (onClick)="showAlert()">[delete]</p-button>
+    <div class="card-options">
+      <p-button (click)="updateItem(item)">[update]</p-button>
+      <p-button (click)="toggleDone(item)">[done]</p-button>
+      <p-button (click)="deleteItem(item)">[delete]</p-button>
+    </div>
   </div>
 </div>

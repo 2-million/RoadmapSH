@@ -1,12 +1,9 @@
 .card-body {
-  padding: 16px;
-  margin: 8px;
+  padding: 8px;
+  margin: 4px;
   border-color: black;
-  border: solid 3px;
+  border: solid 2px;
   border-radius: 10px;
-
-  min-width: 100px;
-  max-width: 300px;
 }
 
 .card-options {
@@ -20,8 +17,25 @@ p {
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
-.info {
-  padding: 10px 0 10px 0;
+.card-board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 36px;
+}
+
+input,
+button {
+  border-bottom: none;
+}
+
+input {
+  border-right: none;
+}
+
+button {
+  border-left: none;
 }
