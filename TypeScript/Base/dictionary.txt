@@ -1,0 +1,39 @@
+const greeting: string = "Hello, TypeaaaScript!";
+console.log(greeting);
+
+// Functions
+
+function greet(name: string) {
+  console.log("Hello, " + name.toUpperCase() + "!!");
+}
+function getFavoriteNumber(): number {
+  return 21;
+}
+greet("sdqwe " + getFavoriteNumber());
+getFavoriteNumber();
+
+// Union types
+
+function printId(id: number | string) {
+  console.log("Your ID is: " + id);
+}
+
+
+printId(101);
+
+printId("202");
+
+printId({ myID: 22342 });
+
+// Anonymous Functions
+
+const names = ["Alice", "Bob", "Eve"];
+/* names.forEach(function (s) {
+   console.log(s.toUpperCase());
+  });
+*/
+names.forEach((s) => {
+  console.log(s.toUpperCase());
+});
+
+// все, что выше - просто плейграунд
